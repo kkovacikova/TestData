@@ -3,11 +3,51 @@ vytáčí se jako +420 nebo 00420
 za předvolbou následuje devítimístné číslo uživatele
 viz. https://www.czregion.cz/prakticke-info
 
+Nejběžnější mobilní prefixy:
+601, 602, 603, 604, 605, 606, 607, 608, 609
+72x (720–729)
+73x (730–739)
+77x (770–779)
+790–799
+
+Pevné linky (geografická čísla)
+Začínají 2–5 podle regionu:
+2xx – Praha
+3xx – Jihozápad
+4xx – Severozápad
+5xx – Severovýchod
+
+speciální čísla — NEJSOU to mobilní čísla - tyto prefixy se používají, ale nepatří mezi mobilní:
+800 – zelená linka (zdarma)
+81x / 83x – modrá linka
+90x – předplacené služby / zpoplatněné
+95x – firemní služby
+97x – VoIP
+910 – VoIP
+116xxx – evropská harmonizovaná čísla
+118xxx – informační linky
+
+
 
 pozitivní testy (Česko):
 +420777123456
 00420777123456
 777123456
++420295123456
+395123456
+00420595123456
+601 123 456
+
+pozitivní testy (Česko) s popisem:
++420777123456 - varianta předvolby + 9 čísel
+00420777123456 - varianta předvolby + 9 čísel
+777123456 - 9 čísel
++420295123456 – varianta předvolby + 9 čísel pevná linka (2xx)
+395123456 – 9 čísel pevná linka (3xx) 
+00420595123456 – varianta předvolby + 9 čísel pevná linka (5xx)
+601 123 456 → někde OK formát, systém sám opraví mezery nebo jsou povolené
+
+
 
 negativní testy (Česko):
 420777123456
@@ -19,6 +59,84 @@ negativní testy (Česko):
 000000000
 603000000
 Nenapsat nic
++420 777 123 456
+420-777-123-456
+777-123-456
+abcdefghi
++420012345678
++042077712345
+0042077123456a
++420-777123456
+0042077712345
+004207771234567
++420800123456
+0042077712345
+004207771234567
++42077712345
++4207771234567
+77712#456
+777-123-456
+777_123_456
+123123123
++420000000000
++420999999999
+
+810123456
+830123456
+900123456
+909888777
+950123456
+970123456
+910123456
+118000
+116111
+
+
+negativní testy (Česko) s popisem:
+420777123456 – chybí + na začátku
+0777123456 - nepovolená nula na začátku českého národního čísla
+77712345 – chybí 1 číslice (-1)
+7771234567 –  1 číslice navíc (+1)
+777a23456 - obsahuje písmeno
+777123@56 – obsahuje znak
+000000000 – prefix 000 není platný český prefix
+603000000 - technicky validní, ale neexistující - nulové bloky se nepoužívají → používá se jako negativní test, když by měl validátor poznat, že to není skutečné/aktivní číslo (pokud systém takovou validaci má)
+Nenapsat nic – prázdný vstup
++420 777 123 456 – mezery, pokud nejsou povoleny
+420-777-123-456 – nepovolené znaky
+777-123-456 – nepovolené znaky
+abcdefghi – nepovolené znaky
++420012345678 - číslo nezačíná 0, pokud je s +420
++0420777123456 – nula za +
+0042077123456a – písmeno na konci
++420-777123456 – nepovolené znaky
+0042077712345 – krátké s předvolbou
+004207771234567 – dlouhé s předvolbou
++420800123456 – 800 je zelená linka, ne mobil
+0042077712345 – varianta předvolby krátké
+004207771234567 – varianta předvolby dlouhé
++42077712345 – varianta předvolby krátké
++4207771234567 – varianta předvolby dlouhé
+77712#456 – nepovolené znaky
+777-123-456 – nepovolené znaky
+777_123_456 – nepovolené znaky
+123123123 – mimo český systém
++420000000000 – neexistující prefix v ČR
++420999999999 – prefix 999 není platný
+
+810123456 – modrá linka
+830123456 – modrá linka
+900123456 – předplacené služby / zpoplatněné
+909888777 – předplacené služby / zpoplatněné
+950123456 – firemní služby
+970123456 - VoIP
+910123456 - VoIP
+118000 – informační linky
+116111 – evropská harmonizovaná čísla
+
+
+
+
 
 pozitivní testy (Slovensko):
 +421910123456
